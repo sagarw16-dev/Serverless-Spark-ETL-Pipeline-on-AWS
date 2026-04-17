@@ -1,6 +1,6 @@
 # Hands-On 12: Serverless Spark ETL Pipeline on AWS
 
-## 📊 Project Overview
+## Project Overview
 
 This project implements a fully automated, event-driven serverless data pipeline on AWS. It demonstrates the modern approach to Data Engineering without the need to manually execute scripts.
 
@@ -8,7 +8,7 @@ The pipeline automatically ingests raw CSV product review data, processes it usi
 
 ---
 
-## 🏗️ Architecture & Data Flow
+## Architecture & Data Flow
 
 **Data Flow Pipeline:**
 `S3 (Landing Upload) -> Lambda (S3 Event Trigger) -> AWS Glue (PySpark ETL Job) -> S3 (Processed Results & Analytics)`
@@ -21,7 +21,7 @@ The pipeline automatically ingests raw CSV product review data, processes it usi
 
 ---
 
-## 🛠️ Technology Stack & AWS Resources Used
+## Technology Stack & AWS Resources Used
 
 ### 1. Data Lake: Amazon S3
 The central storage layer hosting isolated landing and processing zones.
@@ -48,7 +48,7 @@ AWS Lambda (Function: `start_glue_job_trigger`) monitors the S3 landing bucket a
 
 ---
 
-## ⚙️ Spark SQL Queries Implemented
+## Spark SQL Queries Implemented
 
 Inside the AWS Glue Spark Session, the following data analytics queries were developed and executed dynamically:
 
@@ -63,7 +63,7 @@ Inside the AWS Glue Spark Session, the following data analytics queries were dev
 
 ---
 
-## 🚀 Execution & Results
+## Execution & Results
 
 The pipeline successfully executed on the AWS Cloud. The resulting output data files have been downloaded and saved locally in the `Outputs/` directory of this repository, while the master copies live securely in the processed S3 bucket.
 
